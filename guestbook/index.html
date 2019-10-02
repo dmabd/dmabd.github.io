@@ -210,16 +210,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-guestbook">
-          <a href="/guestbook" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
-            
-            留言
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -589,11 +579,11 @@
     });
     new Valine({
         el: '#comments' ,
-        verify: false,
+        verify: true,
         notify: false,
         appId: 'YnLDtFEsqsggS5Uch4yEEEti-gzGzoHsz# your leancloud application appid',
         appKey: 'jodo2OrGQigAYOhC9APaKt1E# your leancloud application appkey',
-        placeholder: 'come on baby!',
+        placeholder: 'welcome write your comment!',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
