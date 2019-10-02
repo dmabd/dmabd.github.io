@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dumengblog.club/"/>
-  <updated>2019-10-02T13:10:53.375Z</updated>
+  <updated>2019-10-02T14:48:35.893Z</updated>
   <id>http://dumengblog.club/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gitment 评论功能</title>
+    <link href="http://dumengblog.club/2019/10/02/gitment-%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/"/>
+    <id>http://dumengblog.club/2019/10/02/gitment-评论功能/</id>
+    <published>2019-10-02T14:36:18.000Z</published>
+    <updated>2019-10-02T14:48:35.893Z</updated>
+    
+    <content type="html"><![CDATA[<p>上一篇博客说了评论第三方有Disqus，畅言，valine，gitment等，对比之后发现还是使用gitment比较靠谱，毕竟是托管在GitHub上的，用起来比较稳。</p><a id="more"></a><p>一、Gitment模块<br>    Gitment 是基于 GitHub Issues 的评论系统。支持在前端直接引入，不需要任何后端代码。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 Markdown / GFM 和代码高亮支持。尤为适合各种基于 GitHub Pages 的静态博客或项目页面。想了解具体效果，可以点击查看官方Demo Page：Gitment Demo。</p><p>二、注册OAuth Application<br>    首先我们需要申请一个Github OAuth Application，点击<a href="https://github.com/settings/applications/new进行注册，填写相关信息，注意：在Authorization" target="_blank" rel="noopener">https://github.com/settings/applications/new进行注册，填写相关信息，注意：在Authorization</a> callback URL填自己的网站url<a href="https://guidozijef.github.io，创建成功后，你会得到一个" target="_blank" rel="noopener">https://guidozijef.github.io，创建成功后，你会得到一个</a> client ID 和一个 client secret，这个将被用于之后的用户登录。</p><p>三、配置gitment<br>在主题文件夹下面的_config.yml文件（路径：themes/next/_config.yml）找到gitment的配置，修改配置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">gitment:</span><br><span class="line">  enable: true</span><br><span class="line">  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway</span><br><span class="line">  count: true # Show comments count in post meta area</span><br><span class="line">  lazy: false # Comments lazy loading with a button</span><br><span class="line">  cleanly: false # Hide &apos;Powered by ...&apos; on footer, and more</span><br><span class="line">  language: # Force language, or auto switch by theme</span><br><span class="line">  github_user: dmabd   # MUST HAVE, Your Github ID</span><br><span class="line">  github_repo: dmabd.github.io # MUST HAVE, The repo you use to store Gitment comments</span><br><span class="line">  client_id: #注册得到的id</span><br><span class="line">  client_secret: #注册得到的secret</span><br><span class="line">  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect</span><br><span class="line">  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled</span><br></pre></td></tr></table></figure><p>gitment是把评论放在对应仓库的issue中的。<br>这时候应该就可以开通gitment评论功能了，发布测试一下。</p><p>由于我是一次成功，所以假如你配置后出了问题那就得找找度娘了，哈哈。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上一篇博客说了评论第三方有Disqus，畅言，valine，gitment等，对比之后发现还是使用gitment比较靠谱，毕竟是托管在GitHub上的，用起来比较稳。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>添加留言功能</title>
