@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dumengblog.club/"/>
-  <updated>2019-10-04T11:56:06.021Z</updated>
+  <updated>2019-10-04T13:56:38.759Z</updated>
   <id>http://dumengblog.club/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客的美化</title>
+    <link href="http://dumengblog.club/2019/10/04/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96/"/>
+    <id>http://dumengblog.club/2019/10/04/博客的美化/</id>
+    <published>2019-10-04T13:51:51.000Z</published>
+    <updated>2019-10-04T13:56:38.759Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天水一篇了。</p><p>关于next主题我也是跟着csdn上的一个大佬一步步操作的，我把链接放在<a href="https://blog.csdn.net/nightmare_dimple/article/details/86661502" target="_blank" rel="noopener">这里</a>大家自己去浏览学习。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天水一篇了。&lt;/p&gt;
+&lt;p&gt;关于next主题我也是跟着csdn上的一个大佬一步步操作的，我把链接放在&lt;a href=&quot;https://blog.csdn.net/nightmare_dimple/article/details/86661502&quot; target=&quot;_bla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>解决hexo图片不加载问题</title>
+    <link href="http://dumengblog.club/2019/10/04/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/"/>
+    <id>http://dumengblog.club/2019/10/04/解决hexo图片不加载问题/</id>
+    <published>2019-10-04T13:03:08.000Z</published>
+    <updated>2019-10-04T13:49:43.581Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先我得说明我用的typora编辑器，今天在书写上一个博客的时候遇到了图片不加载的问题，百度上查了很多方法，大多更改路径或者不用Markdown的语法，用了</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;%asset_img example.jpg examplename&#125;</span><br></pre></td></tr></table></figure><p>这种标签，我挨个尝试都显示不了图片，最终我部署了一下typora，然后再用Markdown语法居然成功的显示图片了。</p><a id="more"></a><p>首先，大家还是设置站点配置文件_config.yml</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span><span class="literal">true</span></span><br></pre></td></tr></table></figure><p>然后在博客根目录 git bash here</p><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-<span class="built_in">image</span> –<span class="built_in">save</span></span><br></pre></td></tr></table></figure><p>接下来我在source目录下新建了一个asset文件夹</p><p>然后我在typora编辑中文件下的偏好设置做了如下更改</p><p><img src="/../asset/1570195008613.png" alt></p><p><img src="/../asset/1570196975730.png" alt="1570196975730"></p><p>还选择了插入图片时复制到文件夹。</p><p>再重新插入图片，用的是asset文件夹下的图片。</p><p>然后hexo g -d</p><p>再看博客的时候图片就出来了。</p><p>希望我的方法可以帮助到您。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先我得说明我用的typora编辑器，今天在书写上一个博客的时候遇到了图片不加载的问题，百度上查了很多方法，大多更改路径或者不用Markdown的语法，用了&lt;/p&gt;
+&lt;figure class=&quot;highlight clojure&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;%asset_img example.jpg examplename&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;这种标签，我挨个尝试都显示不了图片，最终我部署了一下typora，然后再用Markdown语法居然成功的显示图片了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何让百度收录自己的网站</title>
