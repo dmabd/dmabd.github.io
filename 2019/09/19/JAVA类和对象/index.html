@@ -389,7 +389,7 @@
 
 <p>　　若无返回值，返回值类型用void关键字表示，如上述setName()方法。若有返回值，返回值类型要与方法返回值类型一致。</p>
 <h3 id="5-局部变量"><a href="#5-局部变量" class="headerlink" title="　　5. 局部变量"></a>　　5. 局部变量</h3><p>　　如果在成员方法中定义一个变量，那么这个变量别称为局部变量。例如在上述Student类中的getName()方法中定义一个局部变量id如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;    </span><br><span class="line">    <span class="keyword">int</span> id = <span class="number">0</span>;                        <span class="comment">// 定义一个局部变量</span></span><br><span class="line">    <span class="keyword">return</span> id + <span class="keyword">this</span>.name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public String getName() &#123;    </span><br><span class="line">    int id = 0;                        // 定义一个局部变量</span><br><span class="line">    return id + this.name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>　　局部变量是在方法执行时创建，在方法执行结束时被销毁，使用时必须赋值或初始化。所以<strong>局部变量的有效范围从该变量的声明开始到该变量的结束为止</strong>。</p>
 <p>　　若一个方法中含有与成员变量同名的局部变量，则方法中对这个变量的访问以局部变量进行访问。例如id，在上述方法中id=0，而不是Student类中的成员变量id的值。</p>
@@ -599,7 +599,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -891,7 +891,7 @@
           clientSecret: '4ba91a678e9fef4c2a1d1f9f0c3f29cdf2d8451e',
           repo: 'dmabd.github.io',
           owner: 'dmabd',
-          admin: ['dmabd'],
+          admin: ['dumeng'],
           id: md5(location.pathname),
           distractionFreeMode: 'true'
         })
