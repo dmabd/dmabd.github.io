@@ -101,7 +101,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://dumengblog.club/asset/1570195008613.png">
 <meta property="og:image" content="http://dumengblog.club/asset/1570196975730.png">
-<meta property="og:updated_time" content="2019-10-04T13:49:43.581Z">
+<meta property="og:updated_time" content="2019-10-10T12:47:48.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决hexo图片不加载问题">
 <meta name="twitter:description" content="首先我得说明我用的typora编辑器，今天在书写上一个博客的时候遇到了图片不加载的问题，百度上查了很多方法，大多更改路径或者不用Markdown的语法，用了 1&amp;#123;%asset_img example.jpg examplename&amp;#125;  这种标签，我挨个尝试都显示不了图片，最终我部署了一下typora，然后再用Markdown语法居然成功的显示图片了。">
@@ -333,7 +333,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  248
+                  260
                 </span>
               
 
@@ -383,10 +383,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image –save</span><br></pre></td></tr></table></figure>
 
 <p>接下来我在source目录下新建了一个asset文件夹</p>
-<p>然后我在typora编辑中文件下的偏好设置做了如下更改</p>
-<p><img src="/../asset/1570195008613.png" alt></p>
+<p>然后我在typora编辑中文件下的偏好设置做了如下更改，然后打开格式菜单中图像下的设置图片根目录，把_post设为根目录。</p>
+<p><img src="/../asset/1570195008613.png" alt="根目录"></p>
 <p><img src="/../asset/1570196975730.png" alt="1570196975730"></p>
-<p>还选择了插入图片时复制到文件夹。</p>
 <p>再重新插入图片，用的是asset文件夹下的图片。</p>
 <p>然后hexo g -d</p>
 <p>再看博客的时候图片就出来了。</p>
@@ -530,7 +529,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
