@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://dumengblog.club/2019/11/07/Spring%E6%A1%86%E6%9E%B6-Spring-AOP/</loc>
+    
+    <lastmod>2019-11-07T13:43:15.757Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dumengblog.club/2019/11/07/Spring%E6%A1%86%E6%9E%B6-Spring-Bean/</loc>
+    
+    <lastmod>2019-11-07T09:30:10.821Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dumengblog.club/2019/11/06/Spring%E6%A1%86%E6%9E%B6-Spring-IOC/</loc>
+    
+    <lastmod>2019-11-07T08:09:39.627Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dumengblog.club/2019/11/01/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%AC%A1%E8%AF%BE%E8%AE%BE%E6%9F%90%E5%AE%9D%E9%A1%B9%E7%9B%AE/</loc>
     
     <lastmod>2019-11-01T02:28:57.303Z</lastmod>
@@ -226,7 +247,7 @@
   </url>
   
   <url>
-    <loc>http://dumengblog.club/2019/09/09/hello-world/</loc>
+    <loc>http://dumengblog.club/2019/11/07/hello-world/</loc>
     
     <lastmod>2019-09-09T12:50:23.355Z</lastmod>
     
