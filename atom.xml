@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dumengblog.club/"/>
-  <updated>2019-11-18T13:22:19.100Z</updated>
+  <updated>2019-11-18T13:35:32.720Z</updated>
   <id>http://dumengblog.club/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="http://dumengblog.club/2019/11/18/SSH%E9%A1%B9%E7%9B%AE-%E5%9C%A8%E7%BA%BF%E5%95%86%E5%9F%8E/"/>
     <id>http://dumengblog.club/2019/11/18/SSH项目-在线商城/</id>
     <published>2019-11-18T12:50:25.000Z</published>
-    <updated>2019-11-18T13:22:19.100Z</updated>
+    <updated>2019-11-18T13:35:32.720Z</updated>
     
-    <content type="html"><![CDATA[<p>​        关于这次SSH商城项目，首先说明前端不是自己写的，用的传智播客的前端，因为我只会一些简单的CSS+html去制作网页。</p><p>​        经过一周多的辛苦奋斗，不断改错，最终将前台的功能大致实现，卖家端会在下一周进行实现。</p><p>首先输入网址</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:8080/shop</span><br></pre></td></tr></table></figure><p>进入到首页，所有的商品都是从数据库查出来的，不是静态页面。</p><p><img src="/../asset/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2019-11-18T12-38-43.500Z.png" alt="火狐截图_2019-11-18T12-38-43.500Z"></p><p><img src="/../asset/image-20191118210708670.png" alt="image-20191118210708670">        </p><p><img src="/../asset/image-20191118210727845.png" alt="image-20191118210727845"></p><p><img src="/../asset/image-20191118210746406.png" alt="image-20191118210746406"></p><p><img src="/../asset/image-20191118210819968.png" alt="image-20191118210819968"></p><p><img src="/../asset/image-20191118210905670.png" alt="image-20191118210905670"></p><p>当你点击一个商品时会显示对应的商品详情</p><p><img src="/../asset/image-20191118210400033.png" alt="image-20191118210400033"></p><p>点击加入购物车</p><p><img src="/../asset/image-20191118210444478.png" alt="image-20191118210444478"></p><p>当你再点击其他商品时，再加入购物车，也会在其中显示。</p><p><img src="/../asset/image-20191118210949493.png" alt="image-20191118210949493"></p><p>删除和清空购物车都可以实现</p><p>此时点击提交订单，假如你登录了，那么没问题会跳到订单页面，如果没登录会显示如下信息：</p><p><img src="/../asset/image-20191118211147950.png" alt="image-20191118211147950"></p><p>点击菜单里的登录</p><p>接下来去注册。</p><p><img src="/../asset/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2019-11-18T12-40-34.772Z.png" alt="火狐截图_2019-11-18T12-40-34.772Z"></p><p>用户名这里会提示你，你的用户名是否可用</p><p><img src="/../asset/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2019-11-18T12-41-55.160Z.png" alt="火狐截图_2019-11-18T12-41-55.160Z"></p><p>注册后会给你的邮箱发一封邮件</p><p><img src="/../asset/2JE%5BU1PU%250L8HM1%25HB9XBP.png" alt="img"></p><p><img src="/../asset/WSNW9%60GUVWGYHNGD620S74.png" alt="img"></p><p><img src="/../../../Blog/Hexo/source/asset/QQ%E5%9B%BE%E7%89%8720191118211641.png" alt="QQ图片20191118211641"></p><p>登陆成功后返回购物车，此时菜单会更改。</p><p><img src="/../../../Blog/Hexo/source/asset/image-20191118211850239.png" alt="image-20191118211850239"></p><p><img src="/../../../Blog/Hexo/source/asset/image-20191118211926346.png" alt="image-20191118211926346"></p><p>点击订单会显示支付成功，因为就是一个自己的项目，所以没有继续做下去。</p><p><img src="/../../../Blog/Hexo/source/asset/image-20191118212029107.png" alt="image-20191118212029107"></p>]]></content>
+    <content type="html"><![CDATA[<p>​    <a id="more"></a></p><p>​    关于这次SSH商城项目，首先说明前端不是自己写的，用的传智播客的前端，因为我只会一些简单的CSS+html去制作网页。</p><p>​        经过一周多的辛苦奋斗，不断改错，最终将前台的功能大致实现，卖家端会在下一周进行实现。</p><p>首先输入网址</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:8080/shop</span><br></pre></td></tr></table></figure><p>进入到首页，所有的商品都是从数据库查出来的，不是静态页面。</p><p><img src="/../asset/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2019-11-18T12-38-43.500Z.png" alt="火狐截图_2019-11-18T12-38-43.500Z"></p><p><img src="/../asset/image-20191118210708670.png" alt="image-20191118210708670">        </p><p><img src="/../asset/image-20191118210727845.png" alt="image-20191118210727845"></p><p><img src="/../asset/image-20191118210746406.png" alt="image-20191118210746406"></p><p><img src="/../asset/image-20191118210819968.png" alt="image-20191118210819968"></p><p><img src="/../asset/image-20191118210905670.png" alt="image-20191118210905670"></p><p>当你点击一个商品时会显示对应的商品详情</p><p><img src="/../asset/image-20191118210400033.png" alt="image-20191118210400033"></p><p>点击加入购物车</p><p><img src="/../asset/image-20191118210444478.png" alt="image-20191118210444478"></p><p>当你再点击其他商品时，再加入购物车，也会在其中显示。</p><p><img src="/../asset/image-20191118210949493.png" alt="image-20191118210949493"></p><p>删除和清空购物车都可以实现</p><p>此时点击提交订单，假如你登录了，那么没问题会跳到订单页面，如果没登录会显示如下信息：</p><p><img src="/../asset/image-20191118211147950.png" alt="image-20191118211147950"></p><p>点击菜单里的登录</p><p>接下来去注册。</p><p><img src="/../asset/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2019-11-18T12-40-34.772Z.png" alt="火狐截图_2019-11-18T12-40-34.772Z"></p><p>用户名这里会提示你，你的用户名是否可用</p><p><img src="/../asset/%E7%81%AB%E7%8B%90%E6%88%AA%E5%9B%BE_2019-11-18T12-41-55.160Z.png" alt="火狐截图_2019-11-18T12-41-55.160Z"></p><p>注册后会给你的邮箱发一封邮件</p><p><img src="/../asset/2JE%5BU1PU%250L8HM1%25HB9XBP.png" alt="img"></p><p><img src="/../asset/WSNW9%60GUVWGYHNGD620S74.png" alt="img"></p><p><img src="/../asset/QQ%E5%9B%BE%E7%89%8720191118211641.png" alt></p><p>登陆成功后返回购物车，此时菜单会更改。</p><p><img src="/../asset/image-20191118211850239.png" alt="image-20191118211850239"></p><p><img src="/../asset/image-20191118211926346.png" alt="image-20191118211926346"></p><p>点击订单会显示支付成功，因为就是一个自己的项目，所以没有继续做下去。</p><p><img src="/../asset/image-20191118212029107.png" alt="image-20191118212029107"></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;​        关于这次SSH商城项目，首先说明前端不是自己写的，用的传智播客的前端，因为我只会一些简单的CSS+html去制作网页。&lt;/p&gt;
-&lt;p&gt;​        经过一周多的辛苦奋斗，不断改错，最终将前台的功能大致实现，卖家端会在下一周进行实现。&lt;/p&gt;
-&lt;p&gt;首先
-      
+      &lt;p&gt;​&lt;/p&gt;
     
     </summary>
     
