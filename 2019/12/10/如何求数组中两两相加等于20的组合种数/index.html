@@ -92,18 +92,18 @@
 
 
 
-<meta name="description" content="1.题目描述">
+<meta name="description" content="1. 问题描述">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode3_无重复字符的最长子串">
-<meta property="og:url" content="http://dumengblog.club/2019/12/09/leetcode3-无重复字符的最长子串/index.html">
+<meta property="og:title" content="如何求数组中两两相加等于max的组合种数">
+<meta property="og:url" content="http://dumengblog.club/2019/12/10/如何求数组中两两相加等于20的组合种数/index.html">
 <meta property="og:site_name" content="Dumeng&#39;s Blog">
-<meta property="og:description" content="1.题目描述">
+<meta property="og:description" content="1. 问题描述">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-09T13:22:31.986Z">
+<meta property="og:updated_time" content="2019-12-10T12:31:51.997Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode3_无重复字符的最长子串">
-<meta name="twitter:description" content="1.题目描述">
+<meta name="twitter:title" content="如何求数组中两两相加等于max的组合种数">
+<meta name="twitter:description" content="1. 问题描述">
 
 
 
@@ -132,7 +132,7 @@
 </script>
 
 
-  <link rel="canonical" href="http://dumengblog.club/2019/12/09/leetcode3-无重复字符的最长子串/">
+  <link rel="canonical" href="http://dumengblog.club/2019/12/10/如何求数组中两两相加等于20的组合种数/">
 
 
 
@@ -152,7 +152,7 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
-  <title>leetcode3_无重复字符的最长子串 | Dumeng's Blog</title>
+  <title>如何求数组中两两相加等于max的组合种数 | Dumeng's Blog</title>
   
 
 
@@ -298,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://dumengblog.club/2019/12/09/leetcode3-无重复字符的最长子串/">
+    <link itemprop="mainEntityOfPage" href="http://dumengblog.club/2019/12/10/如何求数组中两两相加等于20的组合种数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dumeng">
@@ -315,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">leetcode3_无重复字符的最长子串</h1>
+          <h1 class="post-title" itemprop="name headline">如何求数组中两两相加等于max的组合种数</h1>
         
 
         <div class="post-meta">
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-09T20:54:17+08:00">
-                2019-12-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-10T20:13:42+08:00">
+                2019-12-10
               </time>
             
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  290
+                  348
                 </span>
               
 
@@ -401,17 +401,16 @@
       
 
       
-        <h4 id="1-题目描述"><a href="#1-题目描述" class="headerlink" title="1.题目描述"></a>1.题目描述</h4><a id="more"></a>
+        <h4 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h4><a id="more"></a>
 
-<p>给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。</p>
-<p>示例 1:</p>
-<p>输入: “abcabcbb”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。</p>
-<p>示例 2:</p>
-<p>输入: “bbbbb”<br>输出: 1<br>解释: 因为无重复字符的最长子串是 “b”，所以其长度为 1。</p>
-<p>示例 3:</p>
-<p>输入: “pwwkew”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。<br>     请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。</p>
-<h4 id="2-题解"><a href="#2-题解" class="headerlink" title="2.题解"></a>2.题解</h4><p> 定义两个指针，start和end，代表当前窗口的开始和结束位置，同样使用hashset,当窗口中出现重复的字符时，start++,没有重复时，end++,每次更新长度的最大值 </p>
-<h4 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n = s.length();</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> end=<span class="number">0</span>,start=<span class="number">0</span>;</span><br><span class="line">    Set&lt;Character&gt; set=<span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line">    <span class="keyword">while</span>(start&lt;n &amp;&amp; end&lt;n)&#123;</span><br><span class="line">      <span class="keyword">if</span>(set.contains(s.charAt(end)))&#123;</span><br><span class="line">       set.remove(s.charAt(start++));</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        set.add(s.charAt(end++));</span><br><span class="line">        res=Math.max(res,end-start);</span><br><span class="line">      &#125; </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">      </span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">  </span><br><span class="line">  &#125;  </span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>给定一个数组[7,3,4,8,1], max=9 </p>
+<p>这个数组中满足条件的组合为8,1</p>
+<p>则输出 8,1</p>
+<h4 id="2-问题解析"><a href="#2-问题解析" class="headerlink" title="2.问题解析"></a>2.问题解析</h4><p>方法1：“蛮力”法</p>
+<p>两重循环判断两个数的和是否为max，时间复杂度为O(n²)</p>
+<p>方法2：排序法</p>
+<p>先对数组元素进行排序，此算法的时间复杂度为O(nlogn)，对排序后的数组分别从前到后和从后向前遍历，当满足a[start]+a[end]&gt;max ，如果存在两个数的和等于max则一定在[start,end+1]之间，当满足a[start]+a[end]&lt;max ，如果存在两个数的和等于max则一定在[start+1,end]之间.</p>
+<h4 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 求数组中两两相加等于20的组合种数 </span>&#123;</span><br><span class="line">	<span class="comment">//蛮力法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">findSumNumber</span><span class="params">(<span class="keyword">int</span> []a,<span class="keyword">int</span> max)</span></span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;a.length;j++)&#123;</span><br><span class="line">				<span class="keyword">if</span>(a[i]+a[j]==max)&#123;</span><br><span class="line">					<span class="keyword">return</span> a[i]+<span class="string">" "</span>+a[j];</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//排序法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">findSumNumber1</span><span class="params">(<span class="keyword">int</span> []a,<span class="keyword">int</span> max)</span></span>&#123;</span><br><span class="line">		Arrays.sort(a);</span><br><span class="line">		<span class="keyword">int</span> start=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> end=a.length-<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(start&lt;end)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[start]+a[end]&gt;max)&#123;</span><br><span class="line">				end--;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(a[start]+a[end]&lt;max)&#123;</span><br><span class="line">				start++;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				System.out.println(a[start]+<span class="string">" "</span>+a[end]);</span><br><span class="line">				start++;</span><br><span class="line">				end--;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> []a=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">7</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">1</span>&#125;;</span><br><span class="line">		System.out.println(findSumNumber(a, <span class="number">9</span>));</span><br><span class="line">		findSumNumber1(a, <span class="number">9</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -433,7 +432,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://dumengblog.club/2019/12/09/leetcode3-无重复字符的最长子串/" title="leetcode3_无重复字符的最长子串">http://dumengblog.club/2019/12/09/leetcode3-无重复字符的最长子串/</a>
+    <a href="http://dumengblog.club/2019/12/10/如何求数组中两两相加等于20的组合种数/" title="如何求数组中两两相加等于max的组合种数">http://dumengblog.club/2019/12/10/如何求数组中两两相加等于20的组合种数/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -470,8 +469,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/09/leetcode2-两数相加/" rel="next" title="leetcode2_两数相加">
-                <i class="fa fa-chevron-left"></i> leetcode2_两数相加
+              <a href="/2019/12/10/leetcode5-最长回文串/" rel="next" title="leetcode5_最长回文串">
+                <i class="fa fa-chevron-left"></i> leetcode5_最长回文串
               </a>
             
           </div>
@@ -480,8 +479,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/12/09/leetcode4-寻找两个有序数组的中位数/" rel="prev" title="leetcode4_寻找两个有序数组的中位数">
-                leetcode4_寻找两个有序数组的中位数 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/12/10/如何把一个数组循环右移K位/" rel="prev" title="如何把一个数组循环右移K位">
+                如何把一个数组循环右移K位 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -659,7 +658,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-题目描述"><span class="nav-number">1.</span> <span class="nav-text">1.题目描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-题解"><span class="nav-number">2.</span> <span class="nav-text">2.题解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-代码"><span class="nav-number">3.</span> <span class="nav-text">3.代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-问题描述"><span class="nav-number">1.</span> <span class="nav-text">1. 问题描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-问题解析"><span class="nav-number">2.</span> <span class="nav-text">2.问题解析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-代码"><span class="nav-number">3.</span> <span class="nav-text">3.代码</span></a></li></ol></div>
             
 
           </div>
