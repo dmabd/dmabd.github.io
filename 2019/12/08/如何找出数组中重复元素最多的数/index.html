@@ -92,18 +92,18 @@
 
 
 
-<meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445import java.util.Arrays;import java.util.HashMap;import java.util.Iterator;import java.util.Map;import java.util.Rand">
+<meta name="description" content="1.">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何找出数组中重复元素最多的数">
 <meta property="og:url" content="http://dumengblog.club/2019/12/08/如何找出数组中重复元素最多的数/index.html">
 <meta property="og:site_name" content="Dumeng&#39;s Blog">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445import java.util.Arrays;import java.util.HashMap;import java.util.Iterator;import java.util.Map;import java.util.Rand">
+<meta property="og:description" content="1.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-08T04:48:43.588Z">
+<meta property="og:updated_time" content="2019-12-09T01:38:37.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何找出数组中重复元素最多的数">
-<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445import java.util.Arrays;import java.util.HashMap;import java.util.Iterator;import java.util.Map;import java.util.Rand">
+<meta name="twitter:description" content="1.">
 
 
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  225
+                  226
                 </span>
               
 
@@ -401,7 +401,8 @@
       
 
       
-        <a id="more"></a>
+        <p>1.</p>
+<a id="more"></a>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Iterator;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"><span class="keyword">import</span> java.util.Map.Entry;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 如何找出数组中重复元素最多的数 </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">findmost</span><span class="params">(<span class="keyword">int</span> []a)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> result=<span class="number">0</span>;</span><br><span class="line">		<span class="comment">//记录每个元素出现的次数</span></span><br><span class="line">		Map &lt;Integer,Integer&gt; m=<span class="keyword">new</span> HashMap&lt;Integer,Integer&gt;();</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(m.containsKey(a[i]))&#123;</span><br><span class="line">				m.put(a[i], m.get(a[i])+<span class="number">1</span>);</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				m.put(a[i], <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//找出出现最多次数的数</span></span><br><span class="line">		<span class="keyword">int</span> most=<span class="number">0</span>;</span><br><span class="line">		Iterator it=m.entrySet().iterator();<span class="comment">//map.entrySet()是把HashMap类型的数据转换成集合类型;</span></span><br><span class="line">		<span class="keyword">while</span>(it.hasNext())&#123;</span><br><span class="line">			Map.Entry en=(Entry) it.next();</span><br><span class="line">			<span class="keyword">int</span> key=(Integer) en.getKey();</span><br><span class="line">			<span class="keyword">int</span> val=(Integer) en.getValue();</span><br><span class="line">			<span class="keyword">if</span>(val&gt;most)&#123;</span><br><span class="line">				result=key;</span><br><span class="line">				most=val;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Random r=<span class="keyword">new</span> Random();</span><br><span class="line">		<span class="keyword">int</span> arr[]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">			arr[i]=r.nextInt(<span class="number">9</span>);</span><br><span class="line">		&#125;		</span><br><span class="line">		System.out.println(Arrays.toString(arr));</span><br><span class="line">		System.out.println(findmost(arr));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -551,7 +552,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">50</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

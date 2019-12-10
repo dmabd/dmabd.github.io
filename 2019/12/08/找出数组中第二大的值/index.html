@@ -92,18 +92,18 @@
 
 
 
-<meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.Arrays;import java.util.Random;public class 找出数组中第二大的值 &amp;#123;	public static int SecondMax(int a[])&amp;#123;">
+<meta name="description" content="1.">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="找出数组中第二大的值">
 <meta property="og:url" content="http://dumengblog.club/2019/12/08/找出数组中第二大的值/index.html">
 <meta property="og:site_name" content="Dumeng&#39;s Blog">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.Arrays;import java.util.Random;public class 找出数组中第二大的值 &amp;#123;	public static int SecondMax(int a[])&amp;#123;">
+<meta property="og:description" content="1.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-08T04:29:08.887Z">
+<meta property="og:updated_time" content="2019-12-09T01:39:14.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="找出数组中第二大的值">
-<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.Arrays;import java.util.Random;public class 找出数组中第二大的值 &amp;#123;	public static int SecondMax(int a[])&amp;#123;">
+<meta name="twitter:description" content="1.">
 
 
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  204
+                  205
                 </span>
               
 
@@ -401,7 +401,8 @@
       
 
       
-        <a id="more"></a>
+        <p>1.</p>
+<a id="more"></a>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 找出数组中第二大的值 </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">SecondMax</span><span class="params">(<span class="keyword">int</span> a[])</span></span>&#123;</span><br><span class="line">		<span class="comment">//存储数组中最大值</span></span><br><span class="line">		<span class="keyword">int</span> max=a[<span class="number">0</span>];</span><br><span class="line">		<span class="comment">//存储数组中第二大的值</span></span><br><span class="line">		<span class="keyword">int</span> secondmax=Integer.MIN_VALUE;</span><br><span class="line">		<span class="comment">//遍历数组</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">			<span class="comment">//如果当前值大于数组的最大值，则第二大的值等于先前定义最大值，最大值等于当前值</span></span><br><span class="line">			<span class="keyword">if</span>(a[i]&gt;max)&#123;</span><br><span class="line">				secondmax=max;</span><br><span class="line">				max=a[i];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(a[i]&lt;max)&#123;</span><br><span class="line">				<span class="comment">//如果当前值不比最大值大那就和第二大的值做对比</span></span><br><span class="line">				<span class="keyword">if</span>(a[i]&gt;secondmax)&#123;</span><br><span class="line">					secondmax=a[i];</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">							</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> secondmax;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">		</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Random r=<span class="keyword">new</span> Random();</span><br><span class="line">		<span class="keyword">int</span> arr[]=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">			arr[i]=r.nextInt(<span class="number">9</span>);</span><br><span class="line">		&#125;		</span><br><span class="line">		System.out.println(Arrays.toString(arr));</span><br><span class="line">		System.out.println(SecondMax(arr));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -551,7 +552,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">50</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
