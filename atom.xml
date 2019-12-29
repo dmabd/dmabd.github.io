@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dumengblog.club/"/>
-  <updated>2019-12-25T13:37:26.929Z</updated>
+  <updated>2019-12-29T02:43:35.574Z</updated>
   <id>http://dumengblog.club/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>将博客搬至CSDN</title>
+    <link href="http://dumengblog.club/2019/12/29/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3CSDN/"/>
+    <id>http://dumengblog.club/2019/12/29/将博客搬至CSDN/</id>
+    <published>2019-12-29T02:43:35.000Z</published>
+    <updated>2019-12-29T02:43:35.574Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>剑指offer(5) 从尾到头打印链表</title>
@@ -406,27 +421,6 @@
     <summary type="html">
     
       &lt;h4 id=&quot;1-问题描述&quot;&gt;&lt;a href=&quot;#1-问题描述&quot; class=&quot;headerlink&quot; title=&quot;1.问题描述&quot;&gt;&lt;/a&gt;1.问题描述&lt;/h4&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="http://dumengblog.club/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何判断一个数组中数值是否连续相邻</title>
-    <link href="http://dumengblog.club/2019/12/15/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%80%BC%E6%98%AF%E5%90%A6%E8%BF%9E%E7%BB%AD%E7%9B%B8%E9%82%BB/"/>
-    <id>http://dumengblog.club/2019/12/15/如何判断一个数组中数值是否连续相邻/</id>
-    <published>2019-12-15T12:06:14.000Z</published>
-    <updated>2019-12-15T13:54:58.007Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-题目描述"><a href="#1-题目描述" class="headerlink" title="1.题目描述"></a>1.题目描述</h4><a id="more"></a><p>一个数组序列， 元素取值可能是0 ~ 6535中的任意一个数， 相同数值不会重复出现。0是例外，可以反复出现。设计一种算法，当从该数组序列中随意选取5个数值，判断这5个数值是否连续相邻。需要注意以下4点:</p><p>   1) 5个数值允许是乱序的，例如{8,7,5,0,6}。</p><p>   2) 0可以通配任意数值，例如{8,7,5,0,6 }中的0可以通配成9或者4。</p><p>   3) 0可以多次出现。</p><p>   4)全0算连续，只有一个非0算连续。</p><h4 id="2-解题分析"><a href="#2-解题分析" class="headerlink" title="2.解题分析"></a>2.解题分析</h4><p>如果没有0的存在，要组成连续的数列，最大值和最小值的差距必须是4存在0的情况下，只要最大值和最小值的差跟小于4就可以D所以应找出数列中非0的最大值和非0的最小值，时间复杂度为0(n)，如果非0最大-非0最小+1≤≈5 (即非0最大一非0最小&lt;=4)，那么这5个数值连续相邻，否则，不连续相邻。因此，该算法的时间复杂度为0(m)。 </p><h4 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 如何判断一个数组中数值是否相邻 </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">iscontinuous</span><span class="params">(<span class="keyword">int</span> []a)</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> max=a[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">int</span> min=a[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line"><span class="keyword">if</span>(a[i]!=<span class="number">0</span>)&#123;</span><br><span class="line"><span class="keyword">if</span>(a[i]&gt;max)&#123;</span><br><span class="line">max=a[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(a[i]&lt;min)&#123;</span><br><span class="line">min=a[i];</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(max-min&gt;a.length-<span class="number">1</span>)</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> <span class="keyword">int</span> []&#123;<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">0</span>,<span class="number">5</span>&#125;;</span><br><span class="line">System.out.println(iscontinuous(a));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-题目描述&quot;&gt;&lt;a href=&quot;#1-题目描述&quot; class=&quot;headerlink&quot; title=&quot;1.题目描述&quot;&gt;&lt;/a&gt;1.题目描述&lt;/h4&gt;
     
     </summary>
     
