@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://dumengblog.club/2020/01/14/Redis-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94zset/</loc>
+    <lastmod>2020-01-14</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/14/Redis-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94set/</loc>
+    <lastmod>2020-01-14</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/14/Redis-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94list/</loc>
+    <lastmod>2020-01-14</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/14/Redis-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94hash/</loc>
+    <lastmod>2020-01-14</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/14/Redis-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94String/</loc>
+    <lastmod>2020-01-14</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/14/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2020-01-14</lastmod>
+  </url>  <url>
     <loc>http://dumengblog.club/2020/01/14/Redis%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2020-01-14</lastmod>
   </url>  <url>
