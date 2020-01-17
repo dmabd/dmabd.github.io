@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://dumengblog.club/2020/01/17/jedis%E5%B8%B8%E8%A7%84%E6%93%8D%E4%BD%9C%E6%BC%94%E7%A4%BA/</loc>
+    <lastmod>2020-01-17</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/16/Jedis/</loc>
+    <lastmod>2020-01-16</lastmod>
+  </url>  <url>
+    <loc>http://dumengblog.club/2020/01/15/Redis-key%E9%80%9A%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2020-01-15</lastmod>
+  </url>  <url>
     <loc>http://dumengblog.club/2020/01/14/Redis-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94zset/</loc>
     <lastmod>2020-01-14</lastmod>
   </url>  <url>
