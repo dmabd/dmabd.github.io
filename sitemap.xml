@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://dumengblog.club/2020/02/05/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95/</loc>
+    
+    <lastmod>2020-02-05T08:54:40.702Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dumengblog.club/2020/02/05/MySql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8EMyISAM%E4%B8%8EInnoDB/</loc>
+    
+    <lastmod>2020-02-05T08:51:29.913Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dumengblog.club/2020/02/01/volatile%E5%85%B3%E9%94%AE%E5%AD%97/</loc>
     
     <lastmod>2020-02-02T05:46:22.893Z</lastmod>
